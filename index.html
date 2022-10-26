@@ -1,1 +1,161 @@
-<h1>Stylin' with CSS</>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stylin with CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html{
+            background-color:#ccc;
+        }
+
+      body {
+            font-family:'Courier New', Courier, monospace;
+            max-width:900px;
+            background-color: rgb(199, 208, 207);
+            margin: 0 auto;
+            width: 90%; 
+          }
+
+          header.page-header{
+            background-color: aquamarine;
+          }
+        nav{
+              text-align:center; /* centers the nav */
+          }
+      
+          nav ul {
+                    list-style:none; /* removes the bullets */
+          }
+          nav ul li{
+            display:inline-block; /* makes horizontal, but able to declare margins */
+            margin:0 2%; /* margin left-right, gets smaller as necessary */
+          }
+
+         nav a:hover{
+              text-decoration: none;
+          }
+    
+          footer.page-footer{
+            text-align:center;
+            clear:both;
+          }
+            
+          table.my-table {
+         border-collapse: collapse;
+       }
+ 
+       table.my-table th {
+         background-color: #54585d;
+         color: #ffffff;
+         font-weight: bold;
+         font-size: 13px;
+         border: 1px solid #54585d;
+       }
+ 
+       table.my-table td {
+         padding: 15px;
+       }
+     table.my-table td {
+       color: #636363;
+       border: 1px solid #383c3f;
+     }
+     table.my-table tr {
+       background-color: #63aaf5;
+     }
+     table.my-table tr:nth-child(odd) {
+       background-color: #ffffff;
+     }
+      
+    </style>
+    
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Stylin' with CSS</h1>
+    </header>
+
+
+
+    <nav>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+      </ul>
+    </nav>
+
+
+
+
+
+
+
+    <p>This page provides example CSS</p>
+    <p>Clever content goes here</p>
+    <p>Clever content goes here</p>
+    <P>
+      <ul>
+      <li>2 Fast and Furious</li>
+      <li>Die Hard</li>
+      <li>Top Gun</li>
+      </ul>
+    </P>
+    <p>
+      <ol>
+        <li>Strawberry</li>
+        <li>Kiwi</li>
+        <li>Lychee</li>
+      </ol>
+    </p>
+    <p><img src="https://picsum.photos/200/300" /></p>
+
+    <p><a href="https://picsum.photos/" target="_blank">Lorem Picsum</a></p>
+
+    <p>Here is how we use the <strong>strong</strong> tag. Here is how we use the <em>em</em> tag. Here is how we use the <strike>strike</strike> tag.</p>
+    <div style="border:1px solid black">This text is inside a div. A div is a generic blocking element, for making, boxes, etc. on a page</div>
+
+    <p>The following word is inside a <span style="background:yellow">span</span>. Spans are generic in-line elements used for decoration or targetting. </p>
+
+    <table class="my-table">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>John@example.com</td>
+      </tr>
+      <tr>
+        <td>Judy</td>
+        <td>Doe</td>
+        <td>Judy@example.com</td>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Doe</td>
+        <td>Jill@example.com</td>
+      </tr>
+</table>
+  <footer class="page-footer">
+    <p><small>&copy; 2022 by 
+          Yonus Billow, All Rights Reserved ~ 
+          <a id="html-checker" href="#">Check HTML</a> ~ 
+          <a id="css-checker" href="#">Check CSS</a></small>
+    </p>
+  </footer>
+
+  <script>
+    //https://tinyurl.com/dynamic-html-checker
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+  </script>
+
+      
+  </body>  
+</html>
